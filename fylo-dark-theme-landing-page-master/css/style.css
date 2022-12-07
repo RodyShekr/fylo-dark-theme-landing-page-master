@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    transition: all .2s linear;
+    box-sizing: border-box;
+}
+:root {
+    --dark-blue-intro-email: hsl(217, 28%, 15%); /*(intro and email sign up background)*/
+    --dark-blue-main: hsl(218, 28%, 13%); /*(main background)*/
+    --dark-blue-footer: hsl(216, 53%, 9%); /*(footer background)*/
+    --dark-blue-testimonials: hsl(219, 30%, 18%); /*(testimonials background)*/
+    
+    --cyan: hsl(176, 68%, 64%); /*(inside call-to-action gradient)*/
+    --blue: hsl(198, 60%, 50%); /*(inside call-to-action gradient)*/
+    --light-red-error: hsl(0, 100%, 63%); /*(error)*/
+    
+    --white: hsl(0, 0%, 100%)
+}
+body {
+    background: var(--dark-blue-main);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+#first-container{
+    padding: 4rem;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background: var(--dark-blue-testimonials) url('../images/bg-curvy-desktop.svg') bottom right no-repeat;
+    background-size: 100% 50%;
+}
+.logo {
+    float: left;
+    padding: .5rem;
+}
+nav {
+    float: right;
+    margin: 1rem;
+}
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    filter: brightness(0.75);
+    padding: .5rem;
+    font-family: 'Raleway', sans-serif;
+}
+nav a:hover {
+    filter: brightness(1);
+    text-decoration: underline;
+}
+.illustration-intro {
+    width: 40%;
+    margin: 2rem 1rem 1rem 1rem;
+}
+.block {
+    display: block;
+}
+p {
+    margin: 1rem;
+    color: var(--white);
+    filter: brightness(0.90);
+}
+button {
+    border: none; 
+    border-radius: 2rem;
+    width: 15%;
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--white);
+    background: linear-gradient(-60deg, var(--blue) 0%, var(--cyan) 100%);
+}
+button:hover {
+    cursor: pointer;
+    background: var(--cyan);
+    filter: brightness(1.55);
+}
+#second-container div {
+    padding: 2rem;
+}
+#second-container {
+    width: 92%;
+    margin-left: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+}
+#second-container h3 {
+    color: var(--white);
+}
+#image-stay-productive {
+    padding: 0 2rem;
+}
+#third-container {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    padding: 2rem 2rem 2rem 10rem;
+}
+#in-third-container {
+    text-align: left;
+}
+h2 {
+    padding: 1rem 0;
+    color: var(--white);
+    font-family: 'Raleway', sans-serif;
+}
+#first-container h2 {
+    padding: 1rem;
+}
+#in-third-container p {
+    margin: 0;
+}
+#hover-text {
+    padding: 1rem 0rem;
+    color: var(--cyan);
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+#hover-text span:hover {
+    cursor: pointer;
+    color: var(--white);
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    filter: brightness(2.55);
+}
+#fourth-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 6rem 0;
+    padding-bottom: 10rem;
+}
+#bg-quotes {
+    width: 50px;
+    height: 40px;
+    margin: -1rem -3.3rem 0rem 1rem;
+    z-index: -1;
+}
+.container {
+    width: 25%;
+    margin: 1rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 5px;
+    text-align: left;
+    background-color: var(--dark-blue-testimonials)
+}
+.container img {
+    width: 50px;
+    float: left;
+    border-radius: 50%;
+    margin: 1rem 0rem 1rem 1rem;
+}
+.person span {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 11px;
+    font-family: 'Raleway', sans-serif;
+}
+.person {
+    font-size: 11px;
+    float: left;
+    text-align: left;
+    padding-top: 0.7rem;
+}
+#fifth-container {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    bottom: -115rem;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+    text-align: center;
+    border-radius: .5rem;
+    background-color: var(--dark-blue-intro-email);
+    z-index: 1;
+}
+#fifth-container input {
+    width: 50%;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+}
+#fifth-container input:focus {
+    outline: 0px;
+}
+#fifth-container #second-btn {
+    width: 35%;
+}
+footer {
+    padding-top: 20rem;
+    background-color: var(--dark-blue-footer);
+}
+#footer {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+}
+#second-logo {
+    width: 14%;
+    height: 30%;
+    padding: 1rem;
+}
+#passed {
+    display: none;
+    color: green;
+}
+#error {
+    display: none;
+    color: var(--light-red-error);
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+.contact a {
+    text-decoration: none;
+    margin: 0 2rem;
+    padding: .5rem;
+    color: var(--white);
+    filter: brightness(0.80);
+    display: flex;
+    align-items: flex-start;
+}
+.contact a:hover {
+    color: var(--white);
+    filter: none;
+}
+.img img {
+    margin-right: 1rem;
+}
+.social-media {
+    display: flex;
+    flex-direction: row;
+}
+.social-media a {
+    padding: 0;
+    margin: 0;
+}
+.social-media img {
+    width: 60px;
+    filter: grayscale(100%)
+}
+.social-media img:hover {
+    filter: grayscale(0%)
+}
+.attribution {
+    margin: auto;
+    font-size: 11px;
+    text-align: center;
+    background-color: var(--dark-blue-footer);
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+/*Media screen*/
+@media only screen and (max-width: 1103px) and (min-width:780px) {
+    #first-container{
+        padding: 1rem;
+    }
+    br {
+        display: none;
+    }
+    #second-container div {
+        padding: 0rem;
+    }
+    #second-container {
+        margin-left: 2rem;
+    }
+    #third-container {
+        flex-wrap: wrap;
+        padding-left: 4rem;
+    }
+    #in-third-container {
+        padding-left: 1rem 0;
+    }
+    #image-stay-productive {
+        width: 100%;
+    }
+    #bg-quotes {
+        margin: -1.3rem -4.2rem 0rem 0.5rem;
+    }
+    .container {
+        width: 50%;
+    }
+    #fifth-container {
+        width: 65%;
+        bottom: -161rem;
+    }
+    #fifth-container input {
+        width: 60%;
+    }
+    #fifth-container #second-btn {
+        width: 60%;
+    }
+    #footer {
+        flex-direction: column;
+        text-align: -webkit-left;
+        padding: 1rem;
+    }
+    #second-logo {
+        width: 30%;
+    }
+    .contact {
+        padding: 1rem 0;
+    }
+    .contact a {
+        margin: 0 1rem;
+    }
+    .location {
+        padding: 1rem 0 0 0;
+    }
+    .second-contact {
+        padding: 0 0 1rem 0;
+    }
+    .social-media {
+        display: flex;
+        margin: auto;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 779px){
+    #first-container{
+        padding: 0rem;
+        background: var(--dark-blue-testimonials) url('../images/bg-curvy-mobile.svg') bottom right no-repeat;
+        background-size: 100% 50%;
+    }
+    .logo {
+        width: 30%;
+        margin-top: .3rem;
+    }
+    nav a{
+        font-size: 11px;
+        padding: .3rem;
+    }
+    .illustration-intro {
+        width: 70%;
+        margin: 1rem;
+    }
+    br {
+        display: none;
+    }
+    button {
+        width: 40%;
+    }
+    #second-container div {
+        padding: 0rem;
+    }
+    #second-container {
+        margin: 6rem 0rem 0rem 1rem;
+    }
+    .second {
+        margin-bottom: 2rem;
+    }
+    #third-container {
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    #image-stay-productive {
+        width: 100%;
+    }
+    #bg-quotes {
+        margin: -1.3rem -4.3rem 0rem 0.5rem;
+    }
+    .container {
+        width: 90%;
+    }
+    .container:last-child {
+        margin-bottom: 15rem;
+    }
+    #fifth-container {
+        width: 90%;
+        bottom: -185rem;
+    }
+    #fifth-container input {
+        width: 90%;
+        margin: 1rem;
+    }
+    #fifth-container #second-btn {
+        width: 90%;
+        margin: 1rem;
+    }
+    #footer {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: -webkit-left;
+    }
+    #second-logo {
+        width: 40%;
+        padding: 0;
+    }
+    .contact {
+        padding: 1rem 0;
+        float: left;
+    }
+    .contact a {
+        margin: 0;
+        padding: 0.5rem 0;
+    }
+    .location {
+        padding: 1rem 0 0 0;
+    }
+    .second-contact {
+        padding: 0 0 1rem 0;
+    }
+    .social-media {
+        display: flex;
+        margin: auto;
+        padding: 0;
+    }
+}
